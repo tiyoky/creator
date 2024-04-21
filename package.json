@@ -1,0 +1,16 @@
+{
+  "name": "my-discord-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "discord.js": "^13.5.0",
+    "puppeteer": "^13.3.0",
+    "generate-password": "^1.7.1"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
