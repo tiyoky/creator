@@ -1,8 +1,14 @@
-const Discord = require('discord.js');
+const { Client, Intents } = require('discord.js');
 const puppeteer = require('puppeteer');
-const { generate } = require('generate-password'); // Vous pouvez utiliser cette bibliothèque pour la génération de mots de passe
+const { generate } = require('generate-password');
 
-const client = new Discord.Client();
+const client = new Client({ 
+    intents: [
+        Intents.FLAGS.GUILDS, 
+        Intents.FLAGS.GUILD_MESSAGES,
+        Intents.FLAGS.DIRECT_MESSAGES
+    ]
+});
 const prefix = '+';
 
 client.once('ready', () => {
